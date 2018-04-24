@@ -1,0 +1,44 @@
+{
+  "name": "multi-select",
+  "version": "0.0.1",
+  "description": "级联选择框，e.g. 省市区选择",
+  "main": "lib/react/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chelun-h5/multi-select.git"
+  },
+  "keywords": [
+    "multi-select","react"
+  ],
+  "author": {
+    "name": "jiangjy",
+    "email": "399143666@qq.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chelun-h5/multi-select/issues"
+  },
+  "homepage": "https://github.com/chelun-h5/multi-select#readme",
+  "dependencies": {
+    "better-scroll": "^1.10.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
