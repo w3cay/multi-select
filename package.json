@@ -1,5 +1,5 @@
 {
-  "name": "multi-select",
+  "name": "cl-multi-select",
   "version": "0.0.2",
   "description": "级联选择框，e.g. 省市区选择",
   "main": "lib/react/index.js",
