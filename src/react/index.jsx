@@ -6,10 +6,10 @@ class MultiSelectComponent extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            value: this.props.value || [],
+            value: Object.assign([],props.value),
             datalist: []
         }
-        this.data = this.props.data;
+        this.data = props.data;
     }
 
     componentDidMount() {
@@ -91,7 +91,10 @@ class MultiSelectComponent extends Component{
                     return;
                 }
                 //更新value
-                let value = this.state.datalist[i].list[index].value;
+                let value;
+                if(this.state.datalist[i].list[index]){
+                    value = this.state.datalist[i].list[index].value;
+                }
                 this.state.value.splice(i, this.state.value.length - i, value);
                 //更新data
                 let newDatalist = this.formatData(this.data);
@@ -121,7 +124,11 @@ class MultiSelectComponent extends Component{
         document.querySelector('.MultiSelect-content').className = "MultiSelect-content MultiSelect-slideDown";
         setTimeout(()=>{
             //隐藏multi-select
-            this.props.onhide();
+            try{
+                this.props.onhide();
+            }catch(e){
+                console.error(e);
+            }
         },300);
     }
 
@@ -200,6 +207,7 @@ MultiSelect.propTypes = {
     title: PropTypes.string,
     value: PropTypes.array,
     show: PropTypes.bool,
+    cols: PropTypes.number,
     data: PropTypes.array.isRequired,
     onchange: PropTypes.func.isRequired,
     onhide: PropTypes.func.isRequired
