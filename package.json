@@ -1,6 +1,6 @@
 {
   "name": "multi-select",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "级联选择框，e.g. 省市区选择",
   "main": "lib/react/index.js",
   "directories": {
@@ -15,7 +15,8 @@
     "url": "git+https://github.com/chelun-h5/multi-select.git"
   },
   "keywords": [
-    "multi-select","react"
+    "multi-select",
+    "react"
   ],
   "author": {
     "name": "jiangjy",

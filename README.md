@@ -4,12 +4,12 @@
 ## 安装
 
 ```
-yarn add multi-select
+yarn add cl-multi-select
 ```
 或
 
 ```
-npm i multi-select --save
+npm i cl-multi-select --save
 ```
 
 ## React组件
@@ -18,9 +18,9 @@ React组件有默认导出，所以组件名字任意，以下代码作为示例
 
 ```
 // 导入
-import MultiSelect from 'multi-select';
+import MultiSelect from 'cl-multi-select';
 //导入所有样式
-import 'multi-select/lib/css/index.css';
+import 'cl-multi-select/lib/css/index.css';
 
 // 使用 
 <MultiSelect 
