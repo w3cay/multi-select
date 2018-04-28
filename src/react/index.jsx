@@ -20,7 +20,7 @@ class MultiSelectComponent extends Component{
         // 设置state 初始化scroll
         this.setState({ datalist },()=>{
             this.initScroll();
-            document.querySelector('.MultiSelect-content').className = "MultiSelect-content MultiSelect-slideUp";
+            document.querySelector('.MultiSelect-content').className = "MultiSelect-content MultiSelect-content-react MultiSelect-slideUp";
         });
     }
 
@@ -121,7 +121,7 @@ class MultiSelectComponent extends Component{
     }
 
     hide(){
-        document.querySelector('.MultiSelect-content').className = "MultiSelect-content MultiSelect-slideDown";
+        document.querySelector('.MultiSelect-content').className = "MultiSelect-content MultiSelect-content-react MultiSelect-slideDown";
         setTimeout(()=>{
             //隐藏multi-select
             try{
@@ -176,7 +176,7 @@ class MultiSelectComponent extends Component{
     render(){
         return (
             <div className="MultiSelect" onClick={this.maskClick.bind(this)} >
-                <div className="MultiSelect-content">
+                <div className="MultiSelect-content MultiSelect-content-react">
                     <div className="MultiSelect-title">
                         <div onClick={this.cancel.bind(this)}>取消</div>
                         <div className="MultiSelect-title-center">{this.props.title||''}</div>

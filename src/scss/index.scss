@@ -9,7 +9,7 @@
     color: #000;
     -webkit-tap-highlight-color: transparent;
     -webkit-overflow-scrolling: touch;
-    -webkit-text-size-adjust:none;
+    -webkit-text-size-adjust: none;
     user-select: none;
     .MultiSelect-content {
         position: absolute;
@@ -17,8 +17,10 @@
         left: 0;
         width: 100%;
         background: #d5d8df;
-        transform: translate3d(0, 100%, 0);
-        transition: ease-in-out 0.3s;
+        &.MultiSelect-content-react {
+            transform: translate3d(0, 100%, 0);
+            transition: ease-in-out 0.3s;
+        }
         .MultiSelect-title {
             display: flex;
             align-items: center;
@@ -98,6 +100,22 @@
         transform: translate3d(0, 0, 0);
     }
     .MultiSelect-slideDown {
+        transform: translate3d(0, 100%, 0);
+    }
+    .MultiSelect-fade-leave-active,
+    .MultiSelect-fade-enter-active {
+        transition: all 0.5s ease-in-out;
+    }
+    .MultiSelect-fade-enter,
+    .MultiSelect-fade-leave-to {
+        opacity: 0;
+    }
+    .MultiSelect-slideIn-leave-active,
+    .MultiSelect-slideIn-enter-active {
+        transition: all 0.5s ease-in-out;
+    }
+    .MultiSelect-slideIn-enter,
+    .MultiSelect-slideIn-leave-to {
         transform: translate3d(0, 100%, 0);
     }
 }

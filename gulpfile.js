@@ -18,10 +18,10 @@ gulp.task('scss', function () {
 gulp.task('js', function () {
   return gulp.src('src/react/index.jsx')
     .pipe(babel({
-      presets: ['env','react']
+      presets: ['env', 'react']
     }))
     .pipe(gulp.dest('./lib/react/'));
 });
 
 
-gulp.task('default', ['js','scss']);
+gulp.task('default', ['js', 'scss']);
