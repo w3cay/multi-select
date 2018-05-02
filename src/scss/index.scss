@@ -35,9 +35,11 @@
                     color: #000;
                     text-align: center;
                     padding: 0;
-                    line-height: 42px;
-                    height: 42px;
+                    line-height: 1;
+                    height: 17px;
                     overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
             }
         }
@@ -102,17 +104,17 @@
     .MultiSelect-slideDown {
         transform: translate3d(0, 100%, 0);
     }
-    .MultiSelect-fade-leave-active,
-    .MultiSelect-fade-enter-active {
-        transition: all 0.5s ease-in-out;
+    &.MultiSelect-fade-leave-active,
+    &.MultiSelect-fade-enter-active {
+        transition: all 0.5s;
     }
-    .MultiSelect-fade-enter,
-    .MultiSelect-fade-leave-to {
+    &.MultiSelect-fade-enter,
+    &.MultiSelect-fade-leave-to {
         opacity: 0;
     }
     .MultiSelect-slideIn-leave-active,
     .MultiSelect-slideIn-enter-active {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.5s;
     }
     .MultiSelect-slideIn-enter,
     .MultiSelect-slideIn-leave-to {
