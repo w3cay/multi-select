@@ -11,16 +11,16 @@
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: none;
     user-select: none;
+    .MultiSelect-content-react {
+        transform: translate3d(0, 100%, 0);
+        transition: ease-in-out 0.3s;
+    }
     .MultiSelect-content {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         background: #d5d8df;
-        &.MultiSelect-content-react {
-            transform: translate3d(0, 100%, 0);
-            transition: ease-in-out 0.3s;
-        }
         .MultiSelect-title {
             display: flex;
             align-items: center;
